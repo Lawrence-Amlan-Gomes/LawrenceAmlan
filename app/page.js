@@ -1,9 +1,8 @@
-import Image from "next/image";
-
-export default function Home() {
+import Home from "@/components/Home";
+export default function HomePage() {
   return (
-    <div className="h-screen w-full bg-slate-300 flex justify-center items-center">
-      <div className="text-5xl text-blue-900 font-bold">Next JS</div>
+    <div className="h-screen w-full flex justify-center items-center pl-[200px] pr-[200px] pt-[40px]">
+        <Home/>
     </div>
   );
 }
