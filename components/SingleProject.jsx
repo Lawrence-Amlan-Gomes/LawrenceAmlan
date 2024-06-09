@@ -1,8 +1,16 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 export default function SingleProject({ pic, title, text, livelink }) {
   return (
-    <div className="border-[1px] w-[48%] float-left h-[78%] bg-zinc-950 border-zinc-700 box-border m-[1%] rounded-xl">
+    <motion.div
+      initial={{ scale: 1, opacity:0 }}
+      whileHover={{ scale: 0.99 }}
+      animate={{opacity:1}}
+      transition={{ duration: 1, type: "spring" }}
+      className="border-[1px] w-[48%] hover:border-blue-800 float-left h-[78%] bg-zinc-950 border-zinc-700 box-border m-[1%] rounded-xl"
+    >
       <div className="boder-2 border-zinc-500 w-[96%] m-[2%] rounded-lg relative overflow-hidden h-[60%]">
         <Image
           src={pic}
@@ -24,6 +32,6 @@ export default function SingleProject({ pic, title, text, livelink }) {
           </div>
         </a>
       </Link>
-    </div>
+    </motion.div>
   );
 }
