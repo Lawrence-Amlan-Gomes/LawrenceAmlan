@@ -12,19 +12,19 @@ export default function Nav() {
         </div>
         <div className="flex items-center justify-center w-[80%] relative h-full">
           <Link href="/about">
-            <div className="ml-5 mr-5 tracking-wider hover:text-blue-600 lg:text-[16px]">About</div>
+            <div className="ml-5 mr-5 tracking-wider hover:text-white lg:text-[16px]">About</div>
           </Link>
           <Link href="/project">
-            <div className="ml-5 mr-5 tracking-wider hover:text-blue-600 lg:text-[16px]">Project</div>
+            <div className="ml-5 mr-5 tracking-wider hover:text-white lg:text-[16px]">Project</div>
           </Link>
           <Link href="/skill">
-            <div className="ml-5 mr-5 tracking-wider hover:text-blue-600 lg:text-[16px]">Skill</div>
+            <div className="ml-5 mr-5 tracking-wider hover:text-white lg:text-[16px]">Skill</div>
           </Link>
           <Link href="/education">
-            <div className="ml-5 mr-5 tracking-wider hover:text-blue-600 lg:text-[16px]">Education</div>
+            <div className="ml-5 mr-5 tracking-wider hover:text-white lg:text-[16px]">Education</div>
           </Link>
           <Link href="/contact">
-            <div className="ml-5 mr-5 tracking-wider hover:text-blue-600 lg:text-[16px]">Contact</div>
+            <div className="ml-5 mr-5 tracking-wider hover:text-white lg:text-[16px]">Contact</div>
           </Link>
         </div>
       </div>
