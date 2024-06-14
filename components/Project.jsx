@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import P1Pic from "../public/p1pic.png";
 export default function Project() {
   return (
-    <div className="h-screen w-full flex justify-center items-center pl-[50px] pr-[50px] pt-[90px] pb-[10px]">
-      <div className="w-full h-full overflow-y-auto scroll-smooth scrollbar-thin scrollbar-thumb-zinc-600 scrollbar-track-zinc-900">
+    <div className="h-screen w-full flex justify-center items-center pl-[50px] pr-[50px] pt-[90px] pb-[20px]">
+      <div className="w-full h-full overflow-y-auto scroll-smooth scrollbar-thin  scrollbar-thumb-teal-600 scrollbar-track-zinc-900">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, type: "spring" }}
-          className="border-[1px] border-zinc-400 rounded-lg ml-[1%] mr-[1%] w-[98%] h-[18%] flex justify-center items-center text-white tracking-wider text-5xl font-bold"
+          className="border-[1px] bg-neutral-900 border-zinc-800 rounded-lg ml-[1%] mr-[1%] mb-[1.5%] w-[98%] h-[16.5%] flex justify-center items-center text-teal-500 tracking-wider text-5xl font-bold"
         >
           My Projects
         </motion.div>

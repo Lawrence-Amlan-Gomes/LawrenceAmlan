@@ -13,7 +13,7 @@ export default function SkillCard({img, title, num}){
           ease: "linear"
         }}
         
-        className="border-[1px] border-zinc-700 overflow-hidden p-[1%] hover:border-zinc-500 h-full relative w-[23%] mr-[1%] ml-[1%] float-left rounded-2xl"
+        className="border-[1px] bg-neutral-900 hover:bg-zinc-900 border-zinc-800 overflow-hidden p-[1%] hover:border-zinc-700 h-full relative w-[23%] mr-[1%] ml-[1%] float-left rounded-2xl"
       >
         <div className="h-[50%] w-full float-left mt-[20%] relative">
           <Image
@@ -23,7 +23,7 @@ export default function SkillCard({img, title, num}){
             className="object-contain"
           />
         </div>
-        <div className="h-[30%] w-full float-left  flex justify-center items-center tracking-wide font-bold text-2xl">
+        <div className="h-[30%] w-full float-left text-zinc-300  flex justify-center items-center tracking-wide font-bold text-2xl">
           {title}
         </div>
       </motion.div>
