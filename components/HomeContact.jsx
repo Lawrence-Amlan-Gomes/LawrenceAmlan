@@ -64,7 +64,7 @@ export default function HomeContact() {
         className="w-full h-[70%] relative overflow-hidden"
       >
         <div className="w-full h-[80%] flex justify-center items-center">
-          <HomeContactCard index={index} setIndex={setIndex} ownIdx={1} img={Gmail} text={"amlan@gmail.com"} livelink={"https://mail.google.com/mail/u/0/#inbox?compose=new"}/>
+          <HomeContactCard index={index} setIndex={setIndex} ownIdx={1} img={Gmail} text={"amlan@gmail.com"} livelink={"https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDmBVfPnSRQbxJVPTzwGzhhNBLbStGwMfWdlFhdBlBJzkFBrFtwNtGPTmKTlDcQdBPQmQgV"}/>
           <HomeContactCard index={index} setIndex={setIndex} ownIdx={2} img={GitHub} text={"Lawrence-Amlan-Gomes"} livelink={"https://github.com/Lawrence-Amlan-Gomes"} />
           <HomeContactCard index={index} setIndex={setIndex} ownIdx={3} img={LinkedIn} text={"Lawrence Amlan Gomes"} livelink={"https://www.linkedin.com/in/lawrence-amlan-gomes-13847426b/"}/>
         </div>
