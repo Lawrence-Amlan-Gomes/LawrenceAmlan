@@ -3,6 +3,9 @@ import Image from "next/image";
 import HomeHome from "./HomeHome";
 import HomeAbout from "./HomeAbout";
 import HomeProject from "./HomeProject";
+import HomeSkill from "./HomeSkill";
+import HomeEducation from "./HomeEducation";
+import HomeContact from "./HomeContact";
 export default function Home() {
   return (
     <div className="h-screen w-full justify-center relative overflow-hidden">
@@ -19,6 +22,12 @@ export default function Home() {
         <HomeAbout />
         {/* Projects */}
         <HomeProject/>
+        {/* Skills */}
+        <HomeSkill/>
+        {/* Education */}
+        <HomeEducation/>
+        {/* Contact */}
+        <HomeContact/>
       </div>
     </div>
   );

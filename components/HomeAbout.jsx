@@ -59,14 +59,16 @@ export default function HomeAbout() {
           }}
           className="h-full w-[32.5%] mr-[2.5%] bg-slate-950 hover:border-blue-600 border-slate-700 relative border-[1px] overflow-hidden rounded-3xl float-left"
         >
-          <Image
-            src={Pic}
-            alt="Descriptive alt text"
-            layout="fill"
-            className="object-cover"
-            objectFit="cover"
-            objectPosition="top"
-          />
+          <Link href="/about">
+            <Image
+              src={Pic}
+              alt="Descriptive alt text"
+              layout="fill"
+              className="object-cover"
+              objectFit="cover"
+              objectPosition="top"
+            />
+          </Link>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 1, x: 100 }}

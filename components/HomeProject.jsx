@@ -1,12 +1,13 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import LineAnimate from "./LineAnimate";
-import Image from "next/image";
 import Link from "next/link";
 import P1Pic from "../public/p1pic.png";
 import { FaArrowAltCircleRight } from "react-icons/fa";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import HomeProjectCard from "./HomeProjectCard";
 export default function HomeProject() {
+  const [speed, setSpeed] = useState(15); 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   return (
@@ -42,53 +43,52 @@ export default function HomeProject() {
           </Link>
         </motion.div>
       </div>
-      <div
+      <motion.div
+        initial={{ opacity: 0, scale: 0.98 }}
+        animate={{
+          opacity: isInView ? 1 : 0,
+          scale: isInView ? 1 : 0.98,
+        }}
+        transition={{ duration: 1, type: "spring" }}
         ref={ref}
-        className="w-full h-[70%] relative pb-[5%] pl-[2.5%] pr-[2.5%]"
+        className="w-full h-[70%] relative overflow-hidden flex [&>div]:flex-shrink-0 pb-[5%] pl-[2.5%] pr-[2.5%]"
       >
-        <motion.div className="h-full w-[28.3%] mr-[2.5%] ml-[2.5%] bg-slate-950 hover:border-blue-600 border-slate-700 relative border-[1px] overflow-hidden rounded-3xl float-left">
-          <div className="w-full h-[20%] flex items-center justify-center text-slate-300 text-[24px]">Cafeteria</div>
-          <div className="w-full h-[60%] relative">
-            <Image
-              src={P1Pic}
-              alt="Descriptive alt text"
-              layout="fill"
-              className="object-cover"
-              objectFit="cover"
-              objectPosition="top"
-            />
-          </div>
-          <div className="w-full h-[20%] flex items-center justify-center text-slate-400 text-[20px]">2024</div>
-        </motion.div>
-        <motion.div className="h-full w-[28.3%] mr-[2.5%] ml-[2.5%] bg-slate-950 hover:border-blue-600 border-slate-700 relative border-[1px] overflow-hidden rounded-3xl float-left">
-          <div className="w-full h-[20%] flex items-center justify-center text-slate-300 text-[24px]">Cafeteria</div>
-          <div className="w-full h-[60%] relative">
-            <Image
-              src={P1Pic}
-              alt="Descriptive alt text"
-              layout="fill"
-              className="object-cover"
-              objectFit="cover"
-              objectPosition="top"
-            />
-          </div>
-          <div className="w-full h-[20%] flex items-center justify-center text-slate-400 text-[20px]">2024</div>
-        </motion.div>
-        <motion.div className="h-full w-[28.3%] mr-[2.5%] ml-[2.5%] bg-slate-950 hover:border-blue-600 border-slate-700 relative border-[1px] overflow-hidden rounded-3xl float-left">
-          <div className="w-full h-[20%] flex items-center justify-center text-slate-300 text-[24px]">Cafeteria</div>
-          <div className="w-full h-[60%] relative">
-            <Image
-              src={P1Pic}
-              alt="Descriptive alt text"
-              layout="fill"
-              className="object-cover"
-              objectFit="cover"
-              objectPosition="top"
-            />
-          </div>
-          <div className="w-full h-[20%] flex items-center justify-center text-slate-400 text-[20px]">2024</div>
-        </motion.div>
-      </div>
+        <HomeProjectCard
+          img={P1Pic}
+          title={"Cafeteria"}
+          year={"2024"}
+          num={"-200%"}
+          speed={speed}
+        />
+        <HomeProjectCard
+          img={P1Pic}
+          title={"Cafeteria"}
+          year={"2024"}
+          num={"-200%"}
+          speed={speed}
+        />
+        <HomeProjectCard
+          img={P1Pic}
+          title={"Cafeteria"}
+          year={"2024"}
+          num={"-200%"}
+          speed={speed}
+        />
+        <HomeProjectCard
+          img={P1Pic}
+          title={"Cafeteria"}
+          year={"2024"}
+          num={"-200%"}
+          speed={speed}
+        />
+        <HomeProjectCard
+          img={P1Pic}
+          title={"Cafeteria"}
+          year={"2024"}
+          num={"-200%"}
+          speed={speed}
+        />
+      </motion.div>
       <LineAnimate />
     </>
   );
