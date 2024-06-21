@@ -68,7 +68,7 @@ export default function HomeContact() {
           <HomeContactCard index={index} setIndex={setIndex} ownIdx={2} img={GitHub} text={"Lawrence-Amlan-Gomes"} livelink={"https://github.com/Lawrence-Amlan-Gomes"} />
           <HomeContactCard index={index} setIndex={setIndex} ownIdx={3} img={LinkedIn} text={"Lawrence Amlan Gomes"} livelink={"https://www.linkedin.com/in/lawrence-amlan-gomes-13847426b/"}/>
         </div>
-        <div className="w-full h-[20%] bg-slate-950 flex justify-center items-center text-slate-200 text-[20px] text-center">
+        <div className="w-full h-[20%] bg-slate-950 flex justify-center items-center text-slate-200 text-[16px] text-center">
           Copyright 2024 Lawrence
         </div>
       </motion.div>

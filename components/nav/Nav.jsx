@@ -3,7 +3,7 @@ import Link from "next/link";
 import Logo from "../../public/icon.png";
 export default function Nav() {
   return (
-      <div className="fixed z-20 hover:text-slate-400 hover:bg-slate-950 text-transparent text-[14px] w-full lg:h-[60px] justify-center flex items-center">
+      <div className="fixed z-20 hover:text-slate-400 hover:bg-slate-950 text-transparent text-[14px] w-full lg:h-[70px] justify-center flex items-center">
         <div className="w-[95%] relative h-full">
           <div className="float-left w-[10%] flex items-center justify-start h-full">
             <Link href="/">

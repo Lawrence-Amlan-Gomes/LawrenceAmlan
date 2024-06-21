@@ -8,7 +8,7 @@ import TimeZone from "../public/TimeZone.png";
 import Communication from "../public/Communication.png";
 import { motion } from "framer-motion";
 import AboutCard from "./AboutCard";
-export default function Home() {
+export default function About() {
   return (
     <div className="h-screen w-full justify-center relative overflow-hidden">
       <Image

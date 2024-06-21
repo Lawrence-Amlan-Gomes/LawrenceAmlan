@@ -1,24 +1,50 @@
-"use client"
-import SingleProject from "./SingleProject";
+"use client";
+import Back from "../public/Back.jpg";
+import Image from "next/image";
+import Pic from "../public/2.jpg";
+import P1Pic from "../public/p1pic.png"
+import Person from "../public/Person.png";
+import Coder from "../public/Coder.png";
+import TimeZone from "../public/TimeZone.png";
+import Communication from "../public/Communication.png";
 import { motion } from "framer-motion";
-import P1Pic from "../public/p1pic.png";
+import AboutCard from "./AboutCard";
+import SingleProject from "./SingleProject";
 export default function Project() {
   return (
-    <div className="h-screen w-full flex justify-center items-center pl-[50px] pr-[50px] pt-[90px] pb-[20px]">
-      <div className="w-full h-full overflow-y-auto scroll-smooth scrollbar-thin  scrollbar-thumb-teal-600 scrollbar-track-zinc-900">
+    <div className="h-screen w-full justify-center relative overflow-hidden">
+      <Image
+        src={Back}
+        alt="Descriptive alt text"
+        layout="fill"
+        className="object-cover obsolute z-0"
+      />
+      <div className="absolute w-full h-full overflow-hidden">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+          }}
           transition={{ duration: 1, type: "spring" }}
-          className="border-[1px] bg-neutral-900 border-zinc-800 rounded-lg ml-[1%] mr-[1%] mb-[1.5%] w-[98%] h-[16.5%] flex justify-center items-center text-teal-500 tracking-wider text-5xl font-bold"
+          className="w-full h-[20%] lg:text-[50px] text-blue-500 tracking-wider flex justify-center items-end"
         >
-          My Projects
+          All Projects
         </motion.div>
-        <SingleProject
+        <motion.div
+          initial={{ opacity: 0, y:100 }}
+          animate={{
+            opacity: 1,
+            y : 0,
+            transition: { duration: 0.5 },
+          }}
+          className="w-full h-[80%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-slate-900"
+        >
+          <SingleProject
           pic={P1Pic}
           title={"Cafeteria"}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi culpa molestias sit illum voluptas."
+            "This is a full stack Next JS website for a Cafeteria Management System built in June 2024."
           }
           livelink={"https://cafeteria-opal-psi.vercel.app/"}
         />
@@ -26,7 +52,7 @@ export default function Project() {
           pic={P1Pic}
           title={"Cafeteria"}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi culpa molestias sit illum voluptas."
+            "This is a full stack Next JS website for a Cafeteria Management System built in June 2024."
           }
           livelink={"https://cafeteria-opal-psi.vercel.app/"}
         />
@@ -34,7 +60,7 @@ export default function Project() {
           pic={P1Pic}
           title={"Cafeteria"}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi culpa molestias sit illum voluptas."
+            "This is a full stack Next JS website for a Cafeteria Management System built in June 2024."
           }
           livelink={"https://cafeteria-opal-psi.vercel.app/"}
         />
@@ -42,10 +68,11 @@ export default function Project() {
           pic={P1Pic}
           title={"Cafeteria"}
           text={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi culpa molestias sit illum voluptas."
+            "This is a full stack Next JS website for a Cafeteria Management System built in June 2024."
           }
           livelink={"https://cafeteria-opal-psi.vercel.app/"}
         />
+        </motion.div>
       </div>
     </div>
   );

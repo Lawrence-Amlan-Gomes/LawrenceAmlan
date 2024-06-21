@@ -1,4 +1,6 @@
 "use client";
+import Back from "../public/Back.jpg";
+import Image from "next/image";
 import Html from "../public/html.png";
 import Css from "../public/css.png";
 import Js from "../public/js.png";
@@ -11,30 +13,90 @@ import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
 export default function Skill() {
   return (
-    <div className="h-screen w-full flex justify-center items-center pl-[100px] pr-[100px] pt-[90px] pb-[80px] mx-auto">
-      <div className="text-white w-full h-full relative">
+    <div className="h-screen w-full justify-center relative overflow-hidden">
+      <Image
+        src={Back}
+        alt="Descriptive alt text"
+        layout="fill"
+        className="object-cover obsolute z-0"
+      />
+      <div className="absolute w-full h-full overflow-hidden">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+          }}
           transition={{ duration: 1, type: "spring" }}
-          className="border-[1px]  border-zinc-800 bg-neutral-900 rounded-lg m-[1%] w-[98%] h-[23%] flex justify-center items-center text-teal-500 tracking-wider text-5xl font-bold"
+          className="w-full h-[20%] lg:text-[50px] text-blue-500 tracking-wider flex justify-center items-end"
         >
-          My Skills
+          Learned Skills
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, type: "spring" }}
-          className="flex overflow-x-auto [&>div]:flex-shrink-0 scrollbar scrollbar-thumb-teal-600 scrollbar-track-zinc-900 relative rounded-lg m-[1%] pt-[2%] pb-[2%] h-[70%]"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5 },
+          }}
+          className="w-full h-[80%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-slate-900"
         >
-          <SkillCard num={"-400%"} img={Html} title={"HTML"} />
-          <SkillCard num={"-400%"} img={Css} title={"CSS"} />
-          <SkillCard num={"-400%"} img={Js} title={"Java Script"} />
-          <SkillCard num={"-400%"} img={React} title={"React JS"} />
-          <SkillCard num={"-400%"} img={TailwindCss} title={"Tailwind CSS"} />
-          <SkillCard num={"-400%"} img={NextJS} title={"Next JS"} />
-          <SkillCard num={"-400%"} img={Firebase} title={"Firebase"} />
-          <SkillCard num={"-400%"} img={Mongodb} title={"Mongo DB"} />
+          <SkillCard
+            img={Html}
+            title={"HTML"}
+            des={
+              "At the beginning of my web development journey, I started learning HTML in April 2023. It is the basic foundation of web development."
+            }
+          />
+          <SkillCard
+            img={Css}
+            title={"CSS"}
+            des={
+              "After learning HTML, I learned CSS within one month and did some small projects. It gives styling to our website."
+            }
+          />
+          <SkillCard
+            img={Js}
+            title={"Java Script"}
+            des={
+              "After learning CSS, I learned Java Script within three month and did some small projects. It gives our website the power of movability with user interaction."
+            }
+          />
+          <SkillCard
+            img={React}
+            title={"React JS"}
+            des={
+              "After learning Java Script, I learned React JS within three month and did some small projects. It is a Java Script library."
+            }
+          />
+          <SkillCard
+            img={TailwindCss}
+            title={"Tailwind CSS"}
+            des={
+              "After learning React JS, I learned Tailwind CSS within one month and did some small projects. It is a CSS fram work."
+            }
+          />
+          <SkillCard
+            img={NextJS}
+            title={"Next JS"}
+            des={
+              "After learning Tailwind CSS, I learned Next within two month and did some small projects. It is a React JS fram work."
+            }
+          />
+          <SkillCard
+            img={Firebase}
+            title={"Firebase"}
+            des={
+              "After learning Next JS, I learned Firebase within half month and did some small projects. It is a backend system for any frontend project."
+            }
+          />
+          <SkillCard
+            img={Mongodb}
+            title={"Mongo DB Atlas"}
+            des={
+              "After learning Firebase, I learned Mongo DB Atlas within half month and did some small projects. It is also a backend system for any frontend project."
+            }
+          />
         </motion.div>
       </div>
     </div>
