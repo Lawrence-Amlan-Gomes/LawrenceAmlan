@@ -10,7 +10,7 @@ export default function HomeEduCard({ img, degree, uni, year }) {
       transition={{ type: "spring", duration: 0.2 }}
       className="border-[1px] border-slate-700 overflow-hidden p-[1%] bg-slate-950 hover:border-blue-600 h-full relative w-[28.4%] mr-[2.5%] ml-[2.5%] float-left rounded-2xl"
     >
-      <Link href="/project">
+      <Link href="/education">
         <div className="h-[40%] w-full float-left mt-[10%] relative">
           <Image
             src={img}

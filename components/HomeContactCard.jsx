@@ -17,7 +17,7 @@ export default function HomeContactCard({
     if (ownIdx != index) {
       setHide(true);
     }
-  }, [index]);
+  }, [index, ownIdx]);
   return (
     <div
       onClick={() => {
@@ -37,7 +37,7 @@ export default function HomeContactCard({
             }}
             className={`h-[20%] w-[160%] ${
               hide ? "opacity-0" : "opacity-100"
-            }  ml-[-30%] border-[1px] text-[16px] hover:underline border-slate-800 text-slate-200 p-2 flex justify-center items-center rounded-lg bg-gray-950 hover:text-purple-500 z-30 mt-[-30%]`}
+            }  ml-[-30%] border-[1px] text-[16px] hover:underline border-slate-800 text-slate-200 p-2 flex justify-center items-center rounded-lg bg-gray-950 hover:text-blue-500 z-30 mt-[-30%]`}
           >
             {text}
           </motion.div>

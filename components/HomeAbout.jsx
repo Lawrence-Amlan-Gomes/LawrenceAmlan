@@ -100,7 +100,7 @@ export default function HomeAbout() {
             Always prioritize client collaboration, fostering open communication
           </div>
           <div className="text-slate-400 ml-[10%]">
-            Tech enthusiast with a passion for developmentr
+            Tech enthusiast with a passion for development
           </div>
           <div className="text-slate-400 ml-[10%]">
             Very flexible with time zone communications
