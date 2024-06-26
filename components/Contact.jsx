@@ -7,6 +7,7 @@ import LinkedIn from "../public/LinkedIn.png";
 import { motion } from "framer-motion";
 import HomeEduCard from "./HomeEduCard";
 import ContactCard from "./ContactCard";
+import ContactForm from "./ContactForm";
 export default function Contact() {
   return (
     <div className="h-screen w-full justify-center relative overflow-hidden">
@@ -39,8 +40,8 @@ export default function Contact() {
         >
           <motion.div
             initial={{ scale: 1 }}
-            whileHover={{ scale: [1.01, 1] }}
-            transition={{ duration: 2, type: "spring" }}
+            whileHover={{ scale: 1.01 }}
+            transition={{ duration: 1, type: "spring" }}
             className="h-[90%] m-[2%] w-[37%] float-left border-[1px] bg-opacity-70 hover:border-blue-600 bg-slate-950 relative border-slate-700 rounded-xl"
           >
             <div className="w-full tracking-wider text-slate-300 h-[20%] flex justify-center items-center text-center font-bold lg:text-[20px]">
@@ -54,13 +55,14 @@ export default function Contact() {
           </motion.div>
           <motion.div
             initial={{ scale: 1 }}
-            whileHover={{ scale: [1.01, 1] }}
-            transition={{ duration: 2, type: "spring" }}
-            className="h-[90%] m-[2%] w-[55%] float-left border-[1px] bg-opacity-70 hover:border-blue-600 bg-slate-950 relative border-slate-700 rounded-xl"
+            whileHover={{ scale: 1.01 }}
+            transition={{ duration: 1, type: "spring" }}
+            className="h-[90%] m-[2%] w-[55%] float-left border-[1px] bg-opacity-70 bg-slate-950 relative border-slate-700 rounded-xl"
           >
             <div className="w-full tracking-wider text-slate-300 h-[20%] flex justify-center items-center text-center font-bold lg:text-[20px]">
               Send Me Direct Mail
             </div>
+            <ContactForm/>
           </motion.div>
         </motion.div>
       </div>
