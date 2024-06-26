@@ -19,11 +19,11 @@ export default function SkillCard({ img, title, des }) {
           />
         </div>
       </div>
-      <div className="h-[100%] w-[60%] float-left">
+      <div className="h-[100%] w-[55%] mr-[5%] float-left">
         <div className="h-[40%] w-[100%] float-left flex justify-center items-center text-center text-[20px] text-slate-200 font-bold">
           {title}
         </div>
-        <div className="h-[60%] w-[100%] float-left flex justify-center items-start pr-[5%] text-center text-[14px] text-slate-400">
+        <div className="h-[60%] w-[100%] float-left flex justify-center items-start text-justify text-[14px] text-slate-400">
           {des}
         </div>
         {title}

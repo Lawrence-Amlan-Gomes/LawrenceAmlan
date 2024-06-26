@@ -5,7 +5,7 @@ import Bracu from "../public/Bracu.png";
 import Ndc from "../public/Ndc.png";
 import HolyCross from "../public/HolyCross.png";
 import { motion } from "framer-motion";
-import HomeEduCard from "./HomeEduCard";
+import EduCard from "./EduCard";
 export default function Education() {
   return (
     <div className="h-screen w-full justify-center relative overflow-hidden">
@@ -36,7 +36,33 @@ export default function Education() {
           }}
           className="w-full h-[80%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-slate-900"
         >
-         
+          <EduCard
+            img={Bracu}
+            des={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ad cum possimus officia, molestias earum sapiente ab et asperiores mollitia?"}
+            degree={"Bachelor Of Science In Computer Science"}
+            uni={"Brac University"}
+            year={"( 2022 - 2025 )"}
+            title={"HTML"}
+            livelink={"https://www.bracu.ac.bd/"}
+          />
+          <EduCard
+            img={Ndc}
+            des={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ad cum possimus officia, molestias earum sapiente ab et asperiores mollitia?"}
+            degree={"Higher Secondary Certificate"}
+            uni={"Notre Dame College"}
+            year={"( 2022 - 2025 )"}
+            title={"HTML"}
+            livelink={"https://ndc.edu.bd/"}
+          />
+          <EduCard
+            img={HolyCross}
+            des={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ad cum possimus officia, molestias earum sapiente ab et asperiores mollitia?"}
+            degree={"Secondary School Certificate"}
+            uni={"Bandura Holycross School And College"}
+            year={"( 2022 - 2025 )"}
+            title={"HTML"}
+            livelink={"https://www.facebook.com/BHCSC1912/"}
+          />
         </motion.div>
       </div>
     </div>
