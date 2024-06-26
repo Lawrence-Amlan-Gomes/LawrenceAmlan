@@ -1,15 +1,43 @@
+"use client";
+import Back from "../public/Back.jpg";
+import Image from "next/image";
+import Bracu from "../public/Bracu.png";
+import Ndc from "../public/Ndc.png";
+import HolyCross from "../public/HolyCross.png";
+import { motion } from "framer-motion";
+import HomeEduCard from "./HomeEduCard";
 export default function Contact() {
   return (
-    <div className="h-screen w-full flex justify-center relative items-center pl-[50px] pr-[50px] pb-[50px] pt-[100px]">
-      <div className="w-full h-full relative ">
-        <div className="w-[59%] float-left h-full relative mr-[1%]">
-          <div className="w-full flex mb-[1.7%] justify-center items-center border-[1px] h-[28%]  hover:border-zinc-600  border-zinc-800 rounded-xl bg-zinc-950 lg:text-5xl font-bold tracking-wider text-teal-500">
-            My Social
-          </div>
-          <div className="w-[49%] mr-[1%] flex justify-center items-center border-[1px] h-[70%] float-left  hover:border-zinc-600  border-zinc-800 rounded-xl bg-zinc-950 lg:text-5xl font-bold tracking-wider text-teal-500"></div>
-          <div className="w-[49%] ml-[1%] flex justify-center items-center border-[1px] h-[70%] float-left  hover:border-zinc-600  border-zinc-800 rounded-xl bg-zinc-950 lg:text-5xl font-bold tracking-wider text-teal-500"></div>
-        </div>
-        <div className="w-[39%] ml-[1%] flex justify-center items-center border-[1px] h-[100%] float-left  hover:border-zinc-600  border-zinc-800 rounded-xl bg-zinc-950 lg:text-5xl font-bold tracking-wider text-teal-500"></div>
+    <div className="h-screen w-full justify-center relative overflow-hidden">
+      <Image
+        src={Back}
+        alt="Descriptive alt text"
+        layout="fill"
+        className="object-cover obsolute z-0"
+      />
+      <div className="absolute w-full h-full overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+          }}
+          transition={{ duration: 1, type: "spring" }}
+          className="w-full h-[20%] lg:text-[50px] text-blue-500 tracking-wider flex justify-center items-end"
+        >
+          Get In Touch
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.5 },
+          }}
+          className="w-full h-[80%] relative overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-slate-900"
+        >
+         
+        </motion.div>
       </div>
     </div>
   );
