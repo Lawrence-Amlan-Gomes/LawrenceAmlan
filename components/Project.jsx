@@ -2,8 +2,11 @@
 import Back from "../public/Back.jpg";
 import Image from "next/image";
 import Pic from "../public/2.jpg";
-import P1Pic from "../public/p1pic.png"
-import P2Pic from "../public/p2pic.png"
+import P1Pic from "../public/p1pic.png";
+import P2Pic from "../public/p2pic.png";
+import P3Pic from "../public/p3pic.png";
+import P4Pic from "../public/p4pic.png";
+import P5Pic from "../public/p5pic.png";
 import Person from "../public/Person.png";
 import Coder from "../public/Coder.png";
 import TimeZone from "../public/TimeZone.png";
@@ -53,25 +56,33 @@ export default function Project() {
           pic={P2Pic}
           title={"Tasker"}
           text={
-            "This is a Front End React JS website for a Task Management of a person, built in March 2024."
+            "This is a Frontend React JS website for a Task Management of a person, built in March 2024."
           }
           livelink={"https://improved-tasker5.vercel.app/"}
         />
         <SingleProject
-          pic={P1Pic}
-          title={"Cafeteria"}
+          pic={P5Pic}
+          title={"NewsFeed"}
           text={
-            "This is a full stack Next JS website for a Cafeteria Management System built in June 2024."
+            "This is a Frontend React JS website for reading global news, built in February 2024."
           }
-          livelink={"https://cafeteria-opal-psi.vercel.app/"}
+          livelink={"https://news-feed-swart-nine.vercel.app/"}
         />
         <SingleProject
-          pic={P1Pic}
-          title={"Cafeteria"}
+          pic={P4Pic}
+          title={"Book Finder"}
           text={
-            "This is a full stack Next JS website for a Cafeteria Management System built in June 2024."
+            "This is a Frontend React website of a library, built in January 2024."
           }
-          livelink={"https://cafeteria-opal-psi.vercel.app/"}
+          livelink={"https://lws-react-js-assignment-2-ya8w.vercel.app/"}
+        />
+        <SingleProject
+          pic={P3Pic}
+          title={"Short React Projects"}
+          text={
+            "This is all of my best react short projects when I when a begginer, built in January 2024."
+          }
+          livelink={"https://react-projects-ruddy-seven.vercel.app/"}
         />
         </motion.div>
       </div>
