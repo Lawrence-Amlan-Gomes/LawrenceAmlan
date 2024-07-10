@@ -3,7 +3,6 @@ import Back from "../public/Back.jpg";
 import Image from "next/image";
 import Pic from "../public/2.jpg";
 import P1Pic from "../public/p1pic.png";
-import P2Pic from "../public/p2pic.png";
 import P3Pic from "../public/p3pic.png";
 import P4Pic from "../public/p4pic.png";
 import P5Pic from "../public/p5pic.png";
