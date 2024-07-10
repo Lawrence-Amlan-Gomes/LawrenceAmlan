@@ -3,6 +3,7 @@ import Back from "../public/Back.jpg";
 import Image from "next/image";
 import Pic from "../public/2.jpg";
 import P1Pic from "../public/p1pic.png"
+import P2Pic from "../public/p2pic.png"
 import Person from "../public/Person.png";
 import Coder from "../public/Coder.png";
 import TimeZone from "../public/TimeZone.png";
@@ -49,12 +50,12 @@ export default function Project() {
           livelink={"https://cafeteria-opal-psi.vercel.app/"}
         />
         <SingleProject
-          pic={P1Pic}
-          title={"Cafeteria"}
+          pic={P2Pic}
+          title={"Tasker"}
           text={
-            "This is a full stack Next JS website for a Cafeteria Management System built in June 2024."
+            "This is a Front End React JS website for a Task Management of a person, built in March 2024."
           }
-          livelink={"https://cafeteria-opal-psi.vercel.app/"}
+          livelink={"https://improved-tasker5.vercel.app/"}
         />
         <SingleProject
           pic={P1Pic}

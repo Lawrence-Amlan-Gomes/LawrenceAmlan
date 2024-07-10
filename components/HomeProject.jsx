@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import LineAnimate from "./LineAnimate";
 import Link from "next/link";
 import P1Pic from "../public/p1pic.png";
+import P2Pic from "../public/p2pic.png";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { useRef, useState } from "react";
 import HomeProjectCard from "./HomeProjectCard";
@@ -61,8 +62,8 @@ export default function HomeProject() {
           speed={speed}
         />
         <HomeProjectCard
-          img={P1Pic}
-          title={"Cafeteria"}
+          img={P2Pic}
+          title={"Tasker"}
           year={"2024"}
           num={"-200%"}
           speed={speed}
