@@ -53,7 +53,7 @@ export default function Project() {
           livelink={"https://cafeteria-opal-psi.vercel.app/"}
         />
         <SingleProject
-          pic={P2Pic}
+          pic={P3Pic}
           title={"Tasker"}
           text={
             "This is a Frontend React JS website for a Task Management of a person, built in March 2024."
