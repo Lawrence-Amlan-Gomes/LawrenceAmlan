@@ -3,13 +3,18 @@ import { motion, useInView } from "framer-motion";
 import LineAnimate from "./LineAnimate";
 import Link from "next/link";
 import P1Pic from "../public/p1pic.png";
+import P2Pic from "../public/p2pic.png";
 import P3Pic from "../public/p3pic.png";
 import P4Pic from "../public/p4pic.png";
 import P5Pic from "../public/p5pic.png";
+import P6Pic from "../public/p6pic.png";
+import P7Pic from "../public/p7pic.png";
+// import P8Pic from "../public/p8pic.png";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { useRef, useState } from "react";
 import HomeProjectCard from "./HomeProjectCard";
 export default function HomeProject() {
+  const [num, setNum] = useState("-450%")
   const [speed, setSpeed] = useState(15); 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
@@ -59,36 +64,50 @@ export default function HomeProject() {
         <HomeProjectCard
           img={P1Pic}
           title={"Cafeteria"}
-          year={"2024"}
-          num={"-200%"}
+          year={"June 2024"}
+          num={num}
+          speed={speed}
+        />
+        <HomeProjectCard
+          img={P6Pic}
+          title={"Guest Book"}
+          year={"June 2024"}
+          num={num}
+          speed={speed}
+        />
+        <HomeProjectCard
+          img={P7Pic}
+          title={"Shop Center"}
+          year={"March 2024"}
+          num={num}
           speed={speed}
         />
         <HomeProjectCard
           img={P5Pic}
           title={"NewsFeed"}
-          year={"2024"}
-          num={"-200%"}
+          year={"February 2024"}
+          num={num}
           speed={speed}
         />
         <HomeProjectCard
-          img={P3Pic}
+          img={P2Pic}
           title={"Tasker"}
-          year={"2024"}
-          num={"-200%"}
+          year={"February 2024"}
+          num={num}
           speed={speed}
         />
         <HomeProjectCard
           img={P4Pic}
           title={"Book Finder"}
-          year={"2024"}
-          num={"-200%"}
+          year={"January 2024"}
+          num={num}
           speed={speed}
         />
         <HomeProjectCard
           img={P3Pic}
           title={"Short React Projects"}
-          year={"2024"}
-          num={"-200%"}
+          year={"Januray 2024"}
+          num={num}
           speed={speed}
         />
       </motion.div>

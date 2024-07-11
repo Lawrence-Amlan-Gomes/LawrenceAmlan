@@ -3,9 +3,13 @@ import Back from "../public/Back.jpg";
 import Image from "next/image";
 import Pic from "../public/2.jpg";
 import P1Pic from "../public/p1pic.png";
+import P2Pic from "../public/p2pic.png";
 import P3Pic from "../public/p3pic.png";
 import P4Pic from "../public/p4pic.png";
 import P5Pic from "../public/p5pic.png";
+import P6Pic from "../public/p6pic.png";
+import P7Pic from "../public/p7pic.png";
+// import P8Pic from "../public/p8pic.png";
 import Person from "../public/Person.png";
 import Coder from "../public/Coder.png";
 import TimeZone from "../public/TimeZone.png";
@@ -52,12 +56,20 @@ export default function Project() {
           livelink={"https://cafeteria-opal-psi.vercel.app/"}
         />
         <SingleProject
-          pic={P3Pic}
-          title={"Tasker"}
+          pic={P6Pic}
+          title={"Guest Book"}
           text={
-            "This is a Frontend React JS website for a Task Management of a person, built in March 2024."
+            "This is a full stack React JS website where users can log in and open their accounts, built in June 2024."
           }
-          livelink={"https://improved-tasker5.vercel.app/"}
+          livelink={"https://guest-book-gamma.vercel.app/"}
+        />
+        <SingleProject
+          pic={P7Pic}
+          title={"Shop Center"}
+          text={
+            "This is a Frontend Next JS e-commerce website a shop, built in March 2024."
+          }
+          livelink={"https://shop-center-black.vercel.app/"}
         />
         <SingleProject
           pic={P5Pic}
@@ -66,6 +78,14 @@ export default function Project() {
             "This is a Frontend React JS website for reading global news, built in February 2024."
           }
           livelink={"https://news-feed-swart-nine.vercel.app/"}
+        />
+        <SingleProject
+          pic={P2Pic}
+          title={"Tasker"}
+          text={
+            "This is a Frontend React JS website for a Task Management of a person, built in February 2024."
+          }
+          livelink={"https://improved-tasker5.vercel.app/"}
         />
         <SingleProject
           pic={P4Pic}
