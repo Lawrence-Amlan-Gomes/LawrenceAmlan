@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import LineAnimate from "./LineAnimate";
 import Link from "next/link";
 import P1Pic from "../public/p1pic.png";
-import P2Pic from "../public/p2pic.png";
+import P2Pic from "../public/p2Pic.png";
 import P3Pic from "../public/p3pic.png";
 import P4Pic from "../public/p4pic.png";
 import P5Pic from "../public/p5pic.png";
