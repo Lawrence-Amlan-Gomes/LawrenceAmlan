@@ -38,7 +38,7 @@ export default function Education() {
         >
           <EduCard
             img={Bracu}
-            des={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ad cum possimus officia, molestias earum sapiente ab et asperiores mollitia?"}
+            des={"I have completed my Bachelor Of Science In Computer Science In Computer Science from Brac University. I was also a member of Chess Club, Science Club, Math Club, Computer Club and Cultural Club as well. "}
             degree={"Bachelor Of Science In Computer Science"}
             uni={"Brac University"}
             year={"( 2022 - 2025 )"}
@@ -47,7 +47,7 @@ export default function Education() {
           />
           <EduCard
             img={Ndc}
-            des={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ad cum possimus officia, molestias earum sapiente ab et asperiores mollitia?"}
+            des={"I have completed my Higher Secondary Certificate from Notre Dame College. I was also a member of Chess Club, Science Club, Math Club, Computer Club and Cultural Club as well. "}
             degree={"Higher Secondary Certificate"}
             uni={"Notre Dame College"}
             year={"( 2022 - 2025 )"}
@@ -56,7 +56,7 @@ export default function Education() {
           />
           <EduCard
             img={HolyCross}
-            des={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus ad cum possimus officia, molestias earum sapiente ab et asperiores mollitia?"}
+            des={"I have completed my Secondary School Certificate from Bandura Holycross Scholl And College. I was also a member of Chess Club, Science Club, Math Club, Computer Club and Cultural Club as well. "}
             degree={"Secondary School Certificate"}
             uni={"Bandura Holycross School And College"}
             year={"( 2022 - 2025 )"}
